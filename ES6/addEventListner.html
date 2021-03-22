@@ -17,16 +17,30 @@
         #quadrato p {
             color:white;
         }
+
+        #rettangolo {
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 250px;
+            color:white;
+            background-color: indigo;
+        }
     </style>
 </head>
 <body>
     <div id="quadrato">
-        <p>quadrato</p>
+        
 
+    </div>
+    <div id="rettangolo">
+      
     </div>
     <button id="avantiBtn">avanti</button>
     <script>
         const quadrato = document.querySelector('#quadrato');
+        const rettangolo = document.querySelector('#rettangolo')
         const avantiBtn = document.querySelector('#avantiBtn');
         //console.log("trovato i protagonisti",quadrato,avantiBtn);
         
@@ -42,9 +56,12 @@
     </script>
 
     <script>
-        quadrato.addEventListener('mousemove',(evt) => {
+        const cambiaColore = (evt) => {
+            console.log("target",evt.target.id,evt.clientX,evt.clientY)
             evt.target.style.backgroundColor = "yellow";
-        })
+        }
+        quadrato.addEventListener('mousemove',cambiaColore)
+        rettangolo.addEventListener('mousemove',cambiaColore)
     </script>
 </body>
 </html>
