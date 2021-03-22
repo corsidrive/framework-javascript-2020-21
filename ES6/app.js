@@ -16,7 +16,8 @@ const parole = ['latte','casa','mario','mela'];
 // const findWord = word => item => item === word;
 
 // javascript 2009 - 2014
-function findWord(word){
+function findWord(word) {
+    // const word = "mela"
     return function (item) {
         return item === word
     }
