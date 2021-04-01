@@ -1,7 +1,8 @@
 class Counter {
 
-    constructor(){
-        this.value = 0
+    
+    constructor(iniziale = 0){
+        this.value = iniziale
     }
 
     increment(){
