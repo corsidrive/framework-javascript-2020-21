@@ -1,6 +1,5 @@
 class Counter {
 
-    
     constructor(iniziale = 0){
         this.value = iniziale
     }
