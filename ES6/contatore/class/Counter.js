@@ -4,7 +4,7 @@ class Counter {
         this.value = iniziale
         this.max = max;
         this.min = min;
-        console.log("construct",this.min);   
+        
     }
 
     increment(){
@@ -21,7 +21,7 @@ class Counter {
        
         if(this.min === null) {
             this.value--
-        }else if(this.value > this.max ){
+        }else if(this.value > this.min ){
             this.value-- 
         }
     }

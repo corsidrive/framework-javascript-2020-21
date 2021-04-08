@@ -1,12 +1,10 @@
 import Counter from './Counter.js'; // require 
 
-
 let contatore = new Counter()
 contatore.increment()
 contatore.increment()
 
 console.log("01 - dopo due incrementi senza argomenti nel costruttore",contatore.value == 2);
-
 
 contatore = new Counter(10)
 contatore.increment()
@@ -41,8 +39,3 @@ contatore.decrement() // 10
 contatore.decrement() // 10
 
 console.log("05 - il valore minimo  del contatore deve essere 10",contatore.value == 10)
-
-
-//new CounterElement('#counterA')
-//new CounterElement('#counterB')
-
