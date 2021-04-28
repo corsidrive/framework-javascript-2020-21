@@ -1,0 +1,10 @@
+<app-product-list>
+    {{products|json}}
+
+    <!-- <app-product-item *ngFor="let product of products"  data="product"></app-product-item> -->
+   
+    <div *ngFor="let product of products">
+        {{product.id}}
+    </div>
+    <app-product-item *ngFor="let product of products"></app-product-item>   
+</app-product-list>
